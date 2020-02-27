@@ -2,14 +2,11 @@ const utils = require('./utils')
 
 
 function appFunctions(){
-    this.openInputDatePicker = element(by.css('div.datepicker-input-wrapper-start'))
-    this.startInputMonth = element(by.css('.start-input')).element(by.css('.months-wrapper > span:not(.hidden)'))
-    this.endInputMonth = element(by.css('.end-input')).element(by.css('.months-wrapper > span:not(.hidden)'))
-    this.nextMonth = element(by.css('.month-button-next'))
-
-
-    let EC = protractor.ExpectedConditions
-
+    this.openInputDatePicker = element(by.css('div.datepicker-input-wrapper-start'));
+    this.startInputMonth = element(by.css('.start-input')).element(by.css('.months-wrapper > span:not(.hidden)'));
+    this.endInputMonth = element(by.css('.end-input')).element(by.css('.months-wrapper > span:not(.hidden)'));
+    this.nextMonth = element(by.css('.month-button-next'));
+    let EC = protractor.ExpectedConditions;
 
    this.getBrowserId = async() =>
    {

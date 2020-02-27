@@ -4,10 +4,8 @@ module.exports.dateSelector = function(date='06.06.2020', currentMonth=0){
     const [day, month, year] = date.split(".");
     let currentDate = new Date();
     let customDate = new Date(year,month-1,day);
-
     let monthDifference = customDate.getMonth() - currentMonth;
     let monthName = customDate.toLocaleString('de-de',{month:'long'});
-
     return {monthDifference, monthName, day, newDate:`${year}-${month}-${day}`};   
 }
 
@@ -56,7 +54,6 @@ module.exports.switchBrowser =  async function (paramArray){
 module.exports.dateYYYYMMDD = function(date){
 
     const [day, month, year] = date.split(".");
-    
     return `${year}-${month}-${day}`;   
 }
 
@@ -67,7 +64,6 @@ module.exports.reportLogger = (string,notfail=true) => {
     else{
         return allure.createStep(string, function () {throw new Error(string)})();
     }
-
 }
 
 // module.exports.reportLogger = (string,notfail=true) => {

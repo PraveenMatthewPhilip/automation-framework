@@ -18,11 +18,9 @@ exports.config = {
         resultsDir: 'allure-results'
       }));
 
-
-
+      //initial browser setup
       browser.manage().window().maximize();
       await browser.waitForAngularEnabled(false);
-
-      
     }    
+    
  }

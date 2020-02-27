@@ -3,14 +3,13 @@ const utils = require('../common/utils')
 
 function HomePage(){
     
-
-    this.eleCookieAccept = element(by.css('#CybotCookiebotDialogBodyButtonAccept'))     
-    this.loadingDesitnation = element(by.css('.destinations:not(.location-mobile-dropdown) > .formload-animation'))
-    this.inputTravellerSummary = element(by.css('input#travellerSummary'))
-    this.buttonOKTraveller = element(by.css('#travellerLayer .button-submit'))    
-    this.numberOfAdults = element(by.css('.adultCount.counter'))
-    this.plusAdults = element(by.css('._input-box-traveller')).element(by.css('.plusButton'))
-    this.buttonSearch = element(by.css('#submit'))
+    this.eleCookieAccept = element(by.css('#CybotCookiebotDialogBodyButtonAccept'));
+    this.loadingDesitnation = element(by.css('.destinations:not(.location-mobile-dropdown) > .formload-animation'));
+    this.inputTravellerSummary = element(by.css('input#travellerSummary'));
+    this.buttonOKTraveller = element(by.css('#travellerLayer .button-submit'));
+    this.numberOfAdults = element(by.css('.adultCount.counter'));
+    this.plusAdults = element(by.css('._input-box-traveller')).element(by.css('.plusButton'));
+    this.buttonSearch = element(by.css('#submit'));
 
     
     this.AcceptCookies = allure.createStep('Accept Cookies', async ()=>{

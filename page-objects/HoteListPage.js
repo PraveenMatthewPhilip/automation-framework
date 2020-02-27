@@ -4,11 +4,11 @@ const utils = require('../common/utils')
 
 function HoteListPage(){
 
-    this.loadingHotelOffers = element(by.css('.loading-box.loading-box--hotel'))
-    this.hotelHeadElement = element(by.css('#hotelListHeadSkeleton'))
-    this.hotelListRefreshing = element(by.css('.section_hotelList.skeleton.refreshing'))
-    this.buttonSearch = element(by.css('#submit'))
-    this.allOffers = element.all(by.css('.hotel-offer-evaluation:not(.alternative-offer)'))
+    this.loadingHotelOffers = element(by.css('.loading-box.loading-box--hotel'));
+    this.hotelHeadElement = element(by.css('#hotelListHeadSkeleton'));
+    this.hotelListRefreshing = element(by.css('.section_hotelList.skeleton.refreshing'));
+    this.buttonSearch = element(by.css('#submit'));
+    this.allOffers = element.all(by.css('.hotel-offer-evaluation:not(.alternative-offer)'));
     
     this.currentBrowserId = async function(){
         return await browser.getWindowHandle()

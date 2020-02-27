@@ -3,17 +3,17 @@ const utils = require('../common/utils')
 
 function FlightsPage(){
 
-    this.TerminePreiseButton = element(by.css('a.js-events-and-price'))
-    this.AnReiseStart = element(by.css('#departureTimeRange .noUi-base .noUi-origin .noUi-handle-lower'))
-    this.AnReiseEnd = element(by.css('#departureTimeRange .noUi-base .noUi-origin .noUi-handle-upper'))
-    this.RuckReiseStart = element(by.css('#returnTimeRange .noUi-base .noUi-origin .noUi-handle-lower'))
-    this.RuckResiseEnd = element(by.css('#returnTimeRange .noUi-base .noUi-origin .noUi-handle-upper'))
-    this.departureTimeStart = element(by.css('#departureTimeRange + .time-footer .time-min'))
-    this.departureTimeEnd = element(by.css('#departureTimeRange + .time-footer .time-max'))
-    this.returnTimeStart = element(by.css('#returnTimeRange + .time-footer .time-min'))
-    this.returnTimeEnd = element(by.css('#returnTimeRange + .time-footer .time-max'))
-    this.offerLoading = element(by.css('.section_skeletonOffers.refreshing'))
-    this.allFlights = element.all(by.css('section.skeleton-offers > article'))
+    this.TerminePreiseButton = element(by.css('a.js-events-and-price'));
+    this.AnReiseStart = element(by.css('#departureTimeRange .noUi-base .noUi-origin .noUi-handle-lower'));
+    this.AnReiseEnd = element(by.css('#departureTimeRange .noUi-base .noUi-origin .noUi-handle-upper'));
+    this.RuckReiseStart = element(by.css('#returnTimeRange .noUi-base .noUi-origin .noUi-handle-lower'));
+    this.RuckResiseEnd = element(by.css('#returnTimeRange .noUi-base .noUi-origin .noUi-handle-upper'));
+    this.departureTimeStart = element(by.css('#departureTimeRange + .time-footer .time-min'));
+    this.departureTimeEnd = element(by.css('#departureTimeRange + .time-footer .time-max'));
+    this.returnTimeStart = element(by.css('#returnTimeRange + .time-footer .time-min'));
+    this.returnTimeEnd = element(by.css('#returnTimeRange + .time-footer .time-max'));
+    this.offerLoading = element(by.css('.section_skeletonOffers.refreshing'));
+    this.allFlights = element.all(by.css('section.skeleton-offers > article'));
 
 
     this.setTimeRange = async (sliderElement,x,y) => {
