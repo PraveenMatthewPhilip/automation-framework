@@ -19,6 +19,6 @@
     "jasmine-data-provider": "^2.2.0",
     "protractor": "^5.4.3",
     "webdriver-manager": "^12.1.7",
-    "xlsx": "^0.15.5"
+    "xlsx": "^0.17.0"
   }
 }
